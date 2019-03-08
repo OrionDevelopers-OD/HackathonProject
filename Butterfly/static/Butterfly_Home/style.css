@@ -101,6 +101,7 @@ margin: 0 auto;
     border-left: 1px solid black;
 }
 #user-menu li:hover{
+    margin-top: -5px;
     font-size: 35px;
     transition:all .5s ease;
     overflow: hidden;
@@ -131,6 +132,7 @@ nav{
 nav a{
     font-size: 18px;
     margin-left: 35px;
+
     color: white;
     text-decoration: none;
     float: left;
@@ -199,8 +201,8 @@ nav a:hover{
 }
 /*==========category boxes============*/
 .catbox{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 
     float: left;
     overflow: hidden;
@@ -245,7 +247,7 @@ nav a:hover{
     float: left;
 }
 .prod-box{
-    width: 250px;
+    width: 300px;
     height: 300px;
     overflow: hidden;
     margin: 0 20 30 0;
@@ -255,7 +257,7 @@ nav a:hover{
 .prod-box img{
     max-width: 100%;
     float: left;
-    border-radius: 50%;
+
 }
 .prod-trans{
     background: rgba(0,0,0,0.6);
@@ -293,8 +295,9 @@ nav a:hover{
     width: 150px;
     height: 35px;
     font-size: 17px;
-    border-bottom-style: solid;
-    border-radius: 100%;
+    border-bottom-style:dotted;
+    border-radius: 10%;
+
 }
 #footer{
     width: 100%;
