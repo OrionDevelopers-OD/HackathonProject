@@ -1,0 +1,90 @@
+<html>
+<head>
+    <link href="Cart.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container" style="width: 100%;">
+<br>
+
+
+<div class="card" style="width: 100%">
+<div class="card-body bg-success" style="padding:35px;">
+<div class="card">
+  <div class="card-header"><i class="fas fa-cart"></i><big>Cart</big></div>
+  <div class="card-body">
+
+        <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="indoorfinal2.jpg">
+            </div>
+            <div class="col-3"><big>English Ivy</big><br><small>Indoor Plant</small></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_1');">+</button>
+                    <a class='product_1'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_1');">-</button>
+                </div>
+            </div>
+            <div class="col-2">
+                $3
+            </div>
+        </div>
+
+    <hr>
+        <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="flowercart.jpg">
+            </div>
+            <div class="col-3"><big>Rose</big><br><small>Flower</small></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_2');">+</button>
+                    <a class='product_2'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_2');">-</button>
+                </div>
+            </div>
+            <div class="col-2">
+                $5
+            </div>
+        </div>
+
+    <hr>
+
+      <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="kiwif.jpg">
+            </div>
+            <div class="col-3"><big>Kiwi Seeds</big><br><small>Seeds</small></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_3');">+</button>
+                    <a class='product_3'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_3');">-</button>
+                </div>
+            </div>
+            <div class="col-2">
+                $2
+            </div>
+        </div>
+
+  </div>
+</div>
+
+
+    </div>
+    </div>
+
+<br>
+
+    </div>
+
+    </body>
+
+    <script src="Cart.js"></script>
+</html>
