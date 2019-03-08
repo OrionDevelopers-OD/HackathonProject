@@ -1,24 +1,31 @@
-{% extends 'Base.html' %}
-{% load staticfiles %}
+{% load static %}
+<<<<<<< HEAD
+=======
+
+>>>>>>> bbf963b97b5cec8b639bf607b71368fa0332adf0
+{% include 'Butterfly/header.html' %}
+
+<body>
+  {% block content %}
 
                 <!--=========home-slider==-->
-        <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<body>
 
-    <div id="slider">
 
-        <div style="margin-top: 120px; top: 5px" id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="slider">
+
+    <div style="margin-top: 120px; top: 5px" id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+        </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -36,15 +43,11 @@
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="
-    top: 35.5px;
-">
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="top: 35.5px;">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="
-    top: 35.5px;
-">
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="top: 35.5px;">
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -54,46 +57,52 @@
 </div>
 
 
-            <!----======category circles===----->
+            <!--======category circles===----->
 
             <div id="heading-block" style="margin-left: 50px">
                 <h2>Category</h2>
-                </div>
-                <!-----1st catbox------->
-           <a href="#">
-                 <div class="catbox" style="margin-left: 50px">
-                <img src="images/lantssfinal.jpg" alt="Plants">
+            </div>
+                <!---1st catbox------->
+                <a href = {% url 'plants' %} >
+                  <div class="catbox" style="margin-left: 50px">
+                    <img src="images/lantssfinal.jpg" alt="Plants">
 
-                <span>Plants</span>
+                    <span>Plants</span>
 
-               </div>
+                  </div>
                 </a>
-                 <!-----2nd catbox------->
-           <a href="#">
-                 <div class="catbox" style="margin-left: 50px">
-                <img src="images/seedsfinal.jpg" alt="Plants">
-                <span>Seeds</span>
+                 <!---2nd catbox------->
+                 <a href={% url 'seeds' %} >
+                   <div class="catbox" style="margin-left: 50px">
+                     <img src="images/seedsfinal.jpg" alt="Plants">
+                     <span>Seeds</span>
 
-               </div>
-                </a>
-                 <!-----3rd catbox------->
-           <a href="#">
-                 <div class="catbox" style="margin-left: 50px">
-                <img src="images/gardenFinal.jpg" alt="Plants">
-                <span>Garden Decoration</span>
+                   </div>
+                 </a>
 
-               </div>
-                </a>
-        <!      -----========HEADING OF CATEGORY======---->
+                 <!---3rd catbox------->
+
+                 <a href="#">
+                   <div class="catbox" style="margin-left: 50px">
+                     <img src="images/gardenFinal.jpg" alt="Plants">
+                     <span>Garden Decoration</span>
+
+                   </div>
+                 </a>
+
+        <!---========HEADING OF CATEGORY======---->
+
                 <div id="heading-block">
-                <h2 style="margin-left: 50px">Some Of Our Special Plants</h2>
+                  <h2 style="margin-left: 50px">Some Of Our Special Plants</h2>
                 </div>
-                <div class="prod-container">
-                    <!-----1st product----->
 
-                <div class="prod-box" style="margin-left: 50px">
-                    <img src="images/flowerfinal.jpg" alt="Some of our best plants" >
-                    <div class="prod-trans" >
+                <div class="prod-container">
+
+                    <!---1st product----->
+
+                    <div class="prod-box" style="margin-left: 50px">
+                      <img src="images/flowerfinal.jpg" alt="Some of our best plants" >
+                      <div class="prod-trans" >
                         <div class="prod-feature">
 
                             <p>xyz1</p>
@@ -103,13 +112,14 @@
 
                         </div>
 
+                      </div>
                     </div>
-                    </div>
-                         <!-----2nd product----->
 
-                <div class="prod-box" style="margin-left: 50px">
-                    <img src="images/flowerfinal2.jpg" alt="Some of our best plants" >
-                    <div class="prod-trans" >
+                         <!---2nd product----->
+
+                    <div class="prod-box" style="margin-left: 50px">
+                      <img src="images/flowerfinal2.jpg" alt="Some of our best plants" >
+                      <div class="prod-trans" >
                         <div class="prod-feature">
 
                             <p>xyz2</p>
@@ -119,13 +129,14 @@
 
                         </div>
 
+                      </div>
                     </div>
-                    </div>
-                         <!-----3rd product----->
 
-                <div class="prod-box" style="margin-left: 50px">
-                    <img src="images/finalflower3.jpg" alt="Some of our best plants" >
-                    <div class="prod-trans" >
+                         <!---3rd product----->
+
+                    <div class="prod-box" style="margin-left: 50px">
+                      <img src="images/finalflower3.jpg" alt="Some of our best plants" >
+                      <div class="prod-trans" >
                         <div class="prod-feature">
 
                             <p>xyz3</p>
@@ -135,17 +146,13 @@
 
                         </div>
 
-                    </div>
+                      </div>
                     </div>
 
 
                 </div>
 
+  {% endblock content %}
+</body>
 
-
-
-
-
-
-
-    </div>
+{% include "Butterfly/footer.html" %}

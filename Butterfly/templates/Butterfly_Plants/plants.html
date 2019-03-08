@@ -1,9 +1,8 @@
 <html>
-{% load staticfiles %}
 <head>
     <title>::e plantation::</title>
 
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
     <link href="CSS/media.css" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -58,7 +57,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href={% url 'index' %}><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About </a>
@@ -92,8 +91,75 @@
     </ul>
   </div>
 </nav>
+        <!----=====product area====----->
+        <div id="heading-block">
+                <h2 style="margin-left: 50px; margin-top: 40px;">Indoor Plants</h2>
+                </div>
 
-         <!----=====FOOTER AREA=====----->
+<div class="card">
+  <img src="images/indoorfinal1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Areca Palm</h1>
+  <p class="price">$2.8</p>
+  <p>This leafy plant can be grown anywhere in the house in indirect sunlight.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="images/indoorfinal2.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>English Ivy</h1>
+  <p class="price">$3</p>
+  <p>This green plant helps in reducing airborne fecal-matter particles. it's very beautiful.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="images/indoorfinal3.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Boston Fern</h1>
+  <p class="price">$2.89</p>
+  <p>Boston ferns can grow quite large and make a showy but elegant addition to your home</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="images/indoorfinal4.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Slipper Orchid</h1>
+  <p class="price">$1.98</p>
+  <p>This plant will definitely bring that missing aesthetic vibe to any dull corner of your house.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="images/indoorfinal5.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Spider Plant</h1>
+  <p class="price">$3.45</p>
+  <p>This lovely plant combats benzene, formaldehyde, carbon monoxide and xylene,</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="images/indoorfinal6.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Snake Plant</h1>
+  <p class="price">$3.5</p>
+  <p>snake plant is hardy and adds a unique look to your decor with its upright, strap-like leaves.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="images/indoorfinal7.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Weeping Fig</h1>
+  <p class="price">$4.5</p>
+  <p>This leafy plant helps against emissions from curtains, carpets and furniture.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="images/indoorfinal8.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Peace Lily</h1>
+  <p class="price">$3.2</p>
+  <p>The peace lily offers elegance and beauty with a unique look. It prefers bright</p>
+  <p><button>Add to Cart</button></p>
+</div>
+        <!----=====FOOTER AREA=====----->
 
 
 
