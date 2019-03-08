@@ -9,3 +9,7 @@ Team Members:
 3. Muskan Ghai
 4. Vivek Sharma
 5. Samridhi Kataria
+
+The Butterfly directory contains Butterfly website's django files.
+Templates contail html files, Static contains javascript and css files and media contains media files(images or videos).
+Rest Folders are different web-application files.
