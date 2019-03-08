@@ -39,11 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Butterfly',
     'Butterfly_Home',
-<<<<<<< HEAD
-    'shop.apps.ShopConfig',
-=======
-    'Butterfly_About',
->>>>>>> 37af6d780a515615af899f4fab7c343b59001662
 ]
 
 MIDDLEWARE = [
