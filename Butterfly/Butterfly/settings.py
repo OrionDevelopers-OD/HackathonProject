@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Butterfly',
     'Butterfly_Home',
+    'Butterfly_About',
 ]
 
 MIDDLEWARE = [
