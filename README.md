@@ -8,3 +8,4 @@ Team Members:
 2. Yash Krity
 3. Muskan Ghai
 4. Vivek Sharma
+5. Samridhi Kataria
