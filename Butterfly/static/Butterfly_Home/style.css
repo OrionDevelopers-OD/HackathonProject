@@ -89,12 +89,6 @@ margin: 0 auto;
     float: left;
     margin-left: 8%
 }
-.dropdown1:hover>.dropdown-menu1{
-    display: block;
-}
-#user-menu li {
-    margin-right: 5px;
-}
 /*this is for list styling*/
 
 #user-menu li{
@@ -120,28 +114,35 @@ margin: 0 auto;
 
 
 /*this is navigation bar styling*/
-
-nav{
+#navigation{
     width: 100%;
-    height: 45px;
+    height: 35px;
+    background: #1aaa1a;
     float: left;
-    font-size: 20px;
+    box-shadow: 10px 14px 50px 2px #1aa1a;
+
 }
-ul li{
-    margin-left: 50px;
-    padding: 10px;
+nav{
+    width: 1280px;
+    margin: 0 auto;
+
+
+
 }
-ul li a{
-    color: white;
+nav a{
     font-size: 18px;
-}
+    margin-left: 35px;
 
-.dropdown:hover>.dropdown-menu{
-    color: black;
-    display: block;
-}
+    color: white;
+    text-decoration: none;
+    float: left;
 
-/*this is for slider*/
+}
+nav a:hover{
+
+    color: #000;
+    transition: all .7s ease;
+}
 .carousel-inner{
     margin-top: 20px;
 }
