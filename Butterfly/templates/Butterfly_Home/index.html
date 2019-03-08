@@ -1,4 +1,5 @@
-{% static "css/style.css" %}
+{% load static %}
+
 {% include 'Butterfly/header.html' %}
 
 <body>
@@ -59,7 +60,7 @@
                 <h2>Category</h2>
             </div>
                 <!---1st catbox------->
-                <a href="#">
+                <a href = {% url 'plants' %} >
                   <div class="catbox" style="margin-left: 50px">
                     <img src="images/lantssfinal.jpg" alt="Plants">
 
