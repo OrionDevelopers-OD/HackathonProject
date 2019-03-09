@@ -9,7 +9,7 @@ urlpatterns = [
     path('home/', include('Butterfly_Home.urls')),
     path('plants/', include('Butterfly_Plants.urls')),
     path('seeds/', include('Butterfly_Seeds.urls',)),
-    path('cart/', include('Cart.urls',)),
+    path('garden/', include('garden.urls',)),
 
     # path('accounts/', include('socialdjango.urls',))
 ]

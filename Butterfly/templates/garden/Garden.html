@@ -1,15 +1,6 @@
 {% load staticfiles %}
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  </head>
+{% include 'Butterfly/header.html' %}
   <body>
       <div class="card-header">&nbsp;<a style="font-size: 40px; font-display: block; font-family: tohama;">Garden Decoration/Construction/Maintenance Packages </a></div>
     <div class="container" style="margin-left: 30px;">
@@ -17,7 +8,7 @@
         <div class="row">
             <div class="col-4">
                 <div class="card">
-                <img src="sillver.jpg" class="card-img-top" alt="...">
+                <img src="/static/Plants/sillver.jpg" class="card-img-top" alt="...">
                     <div class="card-body" style="background-color: #C7E7EA">
                         <h5 class="card-title">Silver Package</h5>
                         <p class="card-text">local flowers and herbs</p>
@@ -36,7 +27,7 @@
 
             <div class="col-4">
                 <div class="card">
-                <img src="golden1.jpg" class="card-img-top" alt="...">
+                <img src="/static/Plants/golden1.jpg" class="card-img-top" alt="...">
                     <div class="card-body" style="background-color: #C7E7EA">
                         <h5 class="card-title">Golden Package</h5>
                         <p class="card-text">Dense tropical plants and flowers</p>
@@ -55,7 +46,7 @@
 
             <div class="col-4">
                 <div class="card">
-                <img src="parathe.jpg" class="card-img-top" alt="...">
+                <img src="/static/Plants/parathe.jpg" class="card-img-top" alt="...">
                     <div class="card-body"  style="background-color:#C7E7EA">
                         <h5 class="card-title">Platinum Package</h5>
                         <p class="card-text">Structured parterre with assorted flowers</p>
@@ -79,4 +70,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
-</html>
+
+{% include 'Butterfly/footer.html' %}
