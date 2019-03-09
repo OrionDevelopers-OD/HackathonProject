@@ -5,10 +5,12 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('admin/', admins.site.urls),
+    path('admin/', admin.site.urls),
     path('home/', include('Butterfly_Home.urls')),
     path('plants/', include('Butterfly_Plants.urls')),
     path('seeds/', include('Butterfly_Seeds.urls',)),
+    path('cart/', include('Cart.urls',)),
+
     # path('accounts/', include('socialdjango.urls',))
 ]
 # + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
