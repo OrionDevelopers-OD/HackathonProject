@@ -1,99 +1,8 @@
+{% load staticfiles  %}
 
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="seeds.css">
-</head>
-<body>
-<<<<<<< HEAD
-<div class="heading">
-  <h1> Seeds </h1>
-=======
-  <div id="wrapper">
-    <div id="header">'
-      '
-        <div id="subheader">
-    <div class="container" style="margin-top: 15px">
-           <p>Buy any plant you want</p>
-        <a href="#"> Guest </a><a href="#">Consumer</a><a href="#"> Help</a><a href="#"> Download App</a>
-            </div>
-
-        </div>
-        <!--==main header==-->
-        <div id="main-header"  style="margin-top: -5">
-            <!--logo-->
-        <div id="logo">
-            <span id="ist">E-</span><span id="iist">Plantation.com</span>
+{% include "Butterfly/header.html" %}
 
 
-            </div>
-            <!--==search area==-->
-            <div id="search">
-            <form action="">
-                <input class="search-area" type="text" name="text" placeholder="Search here">
-                <input class="search-btn" type="submit" name="submit" value="SEARCH">
-
-                </form>
-            </div>
-            <!--==user-menu==-->
-            <div id="user-menu">
-            <li><a href="#"><i class="fa fa-shopping-cart"></i> Cart </a></li>
-                <li><a href="#"> <i class="fa fa-github-alt"></i> Account</a></li>
-
-
-            </div>
-        </div>
-        </div>
-        <!----====navigation bar====---->
-
-
-        <nav style="background-color: #1aaa1a;" class="navbar navbar-expand-lg">
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-<<<<<<< HEAD
-        <a class="nav-link" href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
-=======
-        <a class="nav-link" href={% url 'index' %}><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
->>>>>>> bbf963b97b5cec8b639bf607b71368fa0332adf0
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About </a>
-      </li>
-      <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>
-          Offers
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Offer1</a>
-          <a class="dropdown-item" href="#"> Offer1 </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-        <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-image"></i>
-          Gallery
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Our Gardens</a>
-          <a class="dropdown-item" href="#">Our Nurseries</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fa fa-headphones"></i> Customer Service </a>
-      </li>
-
-    </ul>
-  </div>
-</nav>
 <h1 id="seed1"> Flower seeds</h1>
 <div class="card">
    <img src="apple.jpg" alt="Flower" style="width: 210px; height: 260px; margin-left: 10px;margin-top: 10px;margin-right: 10px;">
@@ -150,16 +59,15 @@
 <p> Lychee is the sole member of the genus Litchi in the soapberry family.</p>
 
   <p><button>Add to Cart</button></p>
->>>>>>> 392e30544b1cf92b9defe3dea0c30e8d971c4560
 </div>
-<<<<<<< HEAD
+
 <hr />
 <div class="container1">
    <img src="seed/" alt="seeds" id="image1"/>
      <img src="apples.jpg" alt="seeds" id="one"/>
      <img src="guava.jpg" alt="seeds" id="two"/>
      <img src="watermelom.jpg" alt="seeds" id="three"/>
-=======
+
 <div class="card2">
    <img src="mango1.jpg" alt="Flower" style="width: 210px; height: 260px; margin-left: 10px;margin-top: 10px;margin-right: 10px;">
  <h1 style="
@@ -171,7 +79,7 @@
     margin-bottom: 5px;
 ">$...</p>
 <p> Mangoes are juicy stone fruit from numerous species of tropical trees.</p>
->>>>>>> 36efc4f94a9e268a0201b46a3a8fdd32c6abe8e7
+
 
   <p><button>Add to Cart</button></p>
 </div>
@@ -332,4 +240,5 @@
   <p><button>Add to Cart</button></p>
 </div>
 </body>
-</html>
+
+{% include "Butterfly/footer.html" %}
