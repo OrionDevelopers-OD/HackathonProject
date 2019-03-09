@@ -2,10 +2,12 @@
 <head>
     <title>::e plantation::</title>
 
-<link href="style.css" rel="stylesheet" type="text/css">
+<link href="Cart.css" rel="stylesheet" type="text/css">
     <link href="CSS/media.css" rel="stylesheet" type="text/css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 
 
     </head>
@@ -39,7 +41,7 @@
             <!--==user-menu==-->
             <div id="user-menu">
             <li><a href="#"><i class="fa fa-shopping-cart"></i> Cart </a></li>
-                <li><a href="#"> <i class="fa fa-github-alt"></i> Account</a></li>
+                <li><a href="#"> <i class="fas fa-github-alt"></i> Account</a></li>
 
 
             </div>
@@ -57,7 +59,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href={% url 'index' %}><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About </a>
@@ -91,75 +93,89 @@
     </ul>
   </div>
 </nav>
-        <!----=====product area====----->
-        <div id="heading-block">
-                <h2 style="margin-left: 50px; margin-top: 40px;">Indoor Plants</h2>
+
+
+<!----========cart area====------->
+
+
+<div class="container-fluid" style="width: 100%;">
+<br>
+
+
+
+
+<div class="card">
+  <div class="card-header"><i class="fa fa-shopping-cart" style="font-size: 30px;"></i>&nbsp;<a style="font-size: 40px; font-display: block;">Cart</a></div>
+  <div class="card-body">
+
+        <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover" style="font-size: 30px;"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="indoorfinal2.jpg">
+            </div>
+            <div class="col-3"><a style="font-size: 30px;">English Ivy</a><br><a style='font-size: 20px;'>Indoor Plant</a></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_1');">+</button>
+                    <a class='product_1'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_1');">-</button>
                 </div>
+            </div>
+            <div class="col-2" style="font-size:40px; ">
+                $3
+            </div>
+        </div>
 
-<div class="card">
-  <img src="images/indoorfinal1.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Areca Palm</h1>
-  <p class="price">$2.8</p>
-  <p>This leafy plant can be grown anywhere in the house in indirect sunlight.</p>
-  <p><button>Add to Cart</button></p>
+    <hr>
+        <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover" style="font-size: 30px;"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="flowercart.jpg">
+            </div>
+            <div class="col-3"><a style="font-size: 30px;">Rose</a><br><a style="font-size: 20px;">Flower</a></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_2');">+</button>
+                    <a class='product_2'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_2');">-</button>
+                </div>
+            </div>
+            <div class="col-2" style="font-size: 40px;">
+                $5
+            </div>
+        </div>
+
+    <hr>
+
+      <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover" style="font-size: 30px;"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="kiwif.jpg">
+            </div>
+            <div class="col-3"><a style="font-size: 30px;">Kiwi Seeds</a><br><a style="font-size: 20px;">Seeds</a></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_3');">+</button>
+                    <a class='product_3'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_3');">-</button>
+                </div>
+            </div>
+            <div class="col-2" style="font-size: 40px;">
+                $2
+            </div>
+        </div>
+
+  </div>
 </div>
 
-<div class="card">
-  <img src="images/indoorfinal2.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>English Ivy</h1>
-  <p class="price">$3</p>
-  <p>This green plant helps in reducing airborne fecal-matter particles. it's very beautiful.</p>
-  <p><button>Add to Cart</button></p>
-</div>
 
-<div class="card">
-  <img src="images/indoorfinal3.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Boston Fern</h1>
-  <p class="price">$2.89</p>
-  <p>Boston ferns can grow quite large and make a showy but elegant addition to your home</p>
-  <p><button>Add to Cart</button></p>
-</div>
+    </div>
+    </div>
 
-<div class="card">
-  <img src="images/indoorfinal4.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Slipper Orchid</h1>
-  <p class="price">$1.98</p>
-  <p>This plant will definitely bring that missing aesthetic vibe to any dull corner of your house.</p>
-  <p><button>Add to Cart</button></p>
-</div>
+<br>
 
-<div class="card">
-  <img src="images/indoorfinal5.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Spider Plant</h1>
-  <p class="price">$3.45</p>
-  <p>This lovely plant combats benzene, formaldehyde, carbon monoxide and xylene,</p>
-  <p><button>Add to Cart</button></p>
-</div>
 
-<div class="card">
-  <img src="images/indoorfinal6.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Snake Plant</h1>
-  <p class="price">$3.5</p>
-  <p>snake plant is hardy and adds a unique look to your decor with its upright, strap-like leaves.</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
-<div class="card">
-  <img src="images/indoorfinal7.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Weeping Fig</h1>
-  <p class="price">$4.5</p>
-  <p>This leafy plant helps against emissions from curtains, carpets and furniture.</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
-<div class="card">
-  <img src="images/indoorfinal8.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Peace Lily</h1>
-  <p class="price">$3.2</p>
-  <p>The peace lily offers elegance and beauty with a unique look. It prefers bright</p>
-  <p><button>Add to Cart</button></p>
-</div>
-        <!----=====FOOTER AREA=====----->
+             <!----=====FOOTER AREA=====----->
 
 
 
@@ -211,15 +227,9 @@
 
             </div>
 
-            </div>
+</div>
 
-
-
-
-
-
-    </div>
-
+    <script src="Cart.js"></script>
     </body>
 
 

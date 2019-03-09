@@ -1,4 +1,8 @@
-{% static "css/style.css" %}
+{% load static %}
+<<<<<<< HEAD
+=======
+
+>>>>>>> bbf963b97b5cec8b639bf607b71368fa0332adf0
 {% include 'Butterfly/header.html' %}
 
 <body>
@@ -59,7 +63,7 @@
                 <h2>Category</h2>
             </div>
                 <!---1st catbox------->
-                <a href="#">
+                <a href = {% url 'plants' %} >
                   <div class="catbox" style="margin-left: 50px">
                     <img src="images/lantssfinal.jpg" alt="Plants">
 
@@ -68,7 +72,7 @@
                   </div>
                 </a>
                  <!---2nd catbox------->
-                 <a href="#">
+                 <a href={% url 'seeds' %} >
                    <div class="catbox" style="margin-left: 50px">
                      <img src="images/seedsfinal.jpg" alt="Plants">
                      <span>Seeds</span>
