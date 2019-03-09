@@ -1,0 +1,237 @@
+<html>
+<head>
+    <title>::e plantation::</title>
+
+<link href="Cart.css" rel="stylesheet" type="text/css">
+    <link href="CSS/media.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+    </head>
+<body>
+
+    <div id="wrapper">
+    <div id="header">
+        <div id="subheader">
+    <div class="container" style="margin-top: 15px">
+           <p>Buy any plant you want</p>
+        <a href="#"> Guest </a><a href="#">Consumer</a><a href="#"> Help</a><a href="#"> Download App</a>
+            </div>
+
+        </div>
+        <!--==main header==-->
+        <div id="main-header"  style="margin-top: -5">
+            <!--logo-->
+        <div id="logo">
+            <span id="ist">E-</span><span id="iist">Plantation.com</span>
+
+
+            </div>
+            <!--==search area==-->
+            <div id="search">
+            <form action="">
+                <input class="search-area" type="text" name="text" placeholder="Search here">
+                <input class="search-btn" type="submit" name="submit" value="SEARCH">
+
+                </form>
+            </div>
+            <!--==user-menu==-->
+            <div id="user-menu">
+            <li><a href="#"><i class="fa fa-shopping-cart"></i> Cart </a></li>
+                <li><a href="#"> <i class="fas fa-github-alt"></i> Account</a></li>
+
+
+            </div>
+        </div>
+        </div>
+        <!----====navigation bar====---->
+
+
+        <nav style="background-color: #1aaa1a;" class="navbar navbar-expand-lg">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About </a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>
+          Offers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Offer1</a>
+          <a class="dropdown-item" href="#"> Offer1 </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-image"></i>
+          Gallery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Our Gardens</a>
+          <a class="dropdown-item" href="#">Our Nurseries</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-headphones"></i> Customer Service </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<!----========cart area====------->
+
+
+<div class="container-fluid" style="width: 100%;">
+<br>
+
+
+
+
+<div class="card">
+  <div class="card-header"><i class="fa fa-shopping-cart" style="font-size: 30px;"></i>&nbsp;<a style="font-size: 40px; font-display: block;">Cart</a></div>
+  <div class="card-body">
+
+        <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover" style="font-size: 30px;"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="indoorfinal2.jpg">
+            </div>
+            <div class="col-3"><a style="font-size: 30px;">English Ivy</a><br><a style='font-size: 20px;'>Indoor Plant</a></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_1');">+</button>
+                    <a class='product_1'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_1');">-</button>
+                </div>
+            </div>
+            <div class="col-2" style="font-size:40px; ">
+                $3
+            </div>
+        </div>
+
+    <hr>
+        <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover" style="font-size: 30px;"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="flowercart.jpg">
+            </div>
+            <div class="col-3"><a style="font-size: 30px;">Rose</a><br><a style="font-size: 20px;">Flower</a></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_2');">+</button>
+                    <a class='product_2'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_2');">-</button>
+                </div>
+            </div>
+            <div class="col-2" style="font-size: 40px;">
+                $5
+            </div>
+        </div>
+
+    <hr>
+
+      <div class='row align-items-center'>
+            <div class="col-2"><i class="fas fa-times red-on-hover" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart red-on-hover" style="font-size: 30px;"></i></div>
+            <div class="col-2">
+                <img class="img-fluid img-thumbnail" src="kiwif.jpg">
+            </div>
+            <div class="col-3"><a style="font-size: 30px;">Kiwi Seeds</a><br><a style="font-size: 20px;">Seeds</a></div>
+            <div class="col-3 text-center">
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button" onclick="increaseQuantity('product_3');">+</button>
+                    <a class='product_3'>1</a>
+                    <button class="minus-btn" type="button" name="button" onclick="decreaseQuantity('product_3');">-</button>
+                </div>
+            </div>
+            <div class="col-2" style="font-size: 40px;">
+                $2
+            </div>
+        </div>
+
+  </div>
+</div>
+
+
+    </div>
+    </div>
+
+<br>
+
+
+             <!----=====FOOTER AREA=====----->
+
+
+
+        <div id="footer">
+
+            <div class="footer_sub" style="left: 50px">
+                <h2>Our Story</h2>
+                <p>E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house.E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house.E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house.E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house.E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house.E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house..E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house..E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house..E-commerce website. you can buy any plant of your choice, we will  deliver your plant to your house <span><a href="#">Read more..</a></span></p>
+            <div class="footer_sub_2">
+            <center>
+                <h2>Categories</h2>
+                <ul>
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></li>
+                    <li><a href="#"><i class="fa fa-gift"></i> Offers </a></li>
+                    <li><a href="#"><i class="fa fa-image"></i> Gallery </a></li>
+                    <li><a href="#"><i class="fa fa-headphones"></i> Customer Services </a></li>
+
+
+                </ul>
+                </center>
+                </div>
+
+            <div class="footer_sub_3">
+                <center>
+                <h2>Social links</h2>
+                <ul>
+                    <li><a href="#"><i class="fa fa-Facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i> Google+</a></li>
+                    <li><a href="#"><i class="fa fa-Youtube"></i> Youtube</a></li>
+                    <li><a href="#"><i class="fa fa-Twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-Linkedin"></i> Linkedin</a></li>
+
+
+
+                </ul>
+                </center>
+                </div>
+                 <div class="footer_sub_4">
+                    <center>
+                        <h2>Subscribe Us</h2>
+                <input type="text" name="subs" placeholder="Write your email" class="subs">
+                        <input style="margin-left: 250px;" type="submit" name="submit_btn" value="Subscribe" class="sub_btn">
+                        <p style="font-size: 13px;" class="sub_p">Enter your e-mail id to get notification by us</p>
+                    </center>
+
+                </div>
+
+            </div>
+
+</div>
+
+    <script src="Cart.js"></script>
+    </body>
+
+
+
+</html>

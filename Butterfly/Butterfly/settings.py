@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+STATIC_DIRS = os.path.join(BASE_DIR, 'static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -41,6 +41,14 @@ INSTALLED_APPS = [
     'Butterfly_Home',
     'Butterfly_Plants',
     'Butterfly_Seeds',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    'social_django',
+=======
+>>>>>>> bbf963b97b5cec8b639bf607b71368fa0332adf0
+>>>>>>> f678c287695d80329c55ba0b88188d0afe15f320
+>>>>>>> c14abed371df836c93800025a5aa2724b30e51c0
 ]
 
 MIDDLEWARE = [
@@ -68,10 +76,22 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
 ]
+
+
+AUTHENTICATION_BACKENDS = (
+ 'social_core.backends.open_id.OpenIdAuth',
+ 'social_core.backends.google.GoogleOpenId',
+ 'social_core.backends.google.GoogleOAuth2',
+  'social_core.backends.github.GithubOAuth2',
+ 'social_core.backends.facebook.FacebookOAuth2',
+  'django.contrib.auth.backends.ModelBackend',
+)
 
 WSGI_APPLICATION = 'Butterfly.wsgi.application'
 
@@ -122,8 +142,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
+#
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = [
+STATIC_DIRS,
+]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
