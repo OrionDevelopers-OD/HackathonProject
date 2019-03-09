@@ -40,10 +40,7 @@ INSTALLED_APPS = [
     'Butterfly',
     'Butterfly_Home',
     'Butterfly_Plants',
-<<<<<<< HEAD
-=======
     'Butterfly_Seeds',
->>>>>>> bbf963b97b5cec8b639bf607b71368fa0332adf0
 ]
 
 MIDDLEWARE = [
