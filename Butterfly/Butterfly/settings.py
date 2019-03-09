@@ -41,14 +41,6 @@ INSTALLED_APPS = [
     'Butterfly_Home',
     'Butterfly_Plants',
     'Butterfly_Seeds',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    'social_django',
-=======
->>>>>>> bbf963b97b5cec8b639bf607b71368fa0332adf0
->>>>>>> f678c287695d80329c55ba0b88188d0afe15f320
->>>>>>> c14abed371df836c93800025a5aa2724b30e51c0
 ]
 
 MIDDLEWARE = [
