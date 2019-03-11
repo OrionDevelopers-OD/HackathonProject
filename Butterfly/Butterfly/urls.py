@@ -9,6 +9,8 @@ urlpatterns = [
     path('home/', include('Butterfly_Home.urls')),
     path('plants/', include('Butterfly_Plants.urls')),
     path('seeds/', include('Butterfly_Seeds.urls',)),
+    path('garden/', include('garden.urls',)),
+
     # path('accounts/', include('socialdjango.urls',))
 ]
 # + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
